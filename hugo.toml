@@ -1,10 +1,5 @@
-# ─────────────────────────────────────────────────────────────
-#  EDIT THESE FIRST
-# ─────────────────────────────────────────────────────────────
-# baseURL: pick the line that matches what you do with the repo.
-baseURL = "https://davis1244.github.io/"                     # repo named davis1244.github.io
-# baseURL = "https://dstaple.github.io/"                     # if you rename your account to dstaple
-# baseURL = "https://davis1244.github.io/portfolio_hg/"      # current repo name (project subpath)
+
+baseURL = "https://dtstaple.github.io/"                   # repo named davis1244.github.io
 
 languageCode = "en-us"
 title = "Davis Stapleton"
