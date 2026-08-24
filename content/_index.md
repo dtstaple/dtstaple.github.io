@@ -34,7 +34,7 @@ projects:
         zoom: true
     description: "A tool for planning dispersed camping trips. It scores potential sites on things like distance to water, slope, trail access, land cover, and legal status, and writes out a short explanation for each score instead of just plotting dots on a map. It also plans multi-day routes using Dijkstra over a trail graph built from about 334,000 OpenStreetMap segments."
     results: "The OpenStreetMap segments don't share endpoints, so they needed snapping and merging in PostGIS before routing worked."
-    tags: ["React", "TypeScript", "Django", "PostGIS", "Mapbox"]
+    tags: ["Python", "React", "TypeScript", "Django", "PostGIS", "Mapbox"]
   - title: "Weather Station"
     url: "#"
     meta: "STM32 weather station"
