@@ -25,6 +25,20 @@ experience:
         - "Modernized legacy Perl applications by refactoring code into modular Python."
       tags: ["Python", "SQL"]
 projects:
+  - title: "Autonomous IoT Security Gateway"
+    url: "#"   # TODO: GitHub link
+    status: "WIP"
+    meta: "Raspberry Pi + ESP32 IoT gateway"
+    images:
+      - src: "/other/iotgw-dashboard.png"
+        alt: "Live monitoring dashboard showing device trust, anomaly scores, and event log"
+        zoom: true
+      - src: "/other/iotgw-terminals.png"
+        alt: "Scoring daemon, dashboard API, and ESP32 telemetry running live in terminals"
+        zoom: true
+    description: "A research project on how AI agents make security decisions in IoT environments. It's built on a Raspberry Pi gateway that requires every device to prove its identity with mutual-TLS certificates, blocks all traffic by default, and uses an ML autoencoder to score each device's behavior live."
+    results: "Next, I'm adding LLM agents that investigate flagged devices and recommend responses, as part of research on how reliable AI-made security decisions really are."
+    tags: ["C++", "Python", "PyTorch", "ONNX", "nftables", "mTLS", "MQTT", "LangGraph"]
   - title: "CampSite"
     url: "#"
     meta: "Camping trip planner"

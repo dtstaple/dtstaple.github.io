@@ -42,7 +42,7 @@
   {{ $title := .title }}
   <article class="pane item-card{{ with .images }} has-media{{ end }}">
     <div class="item-body">
-      <h2><a href="{{ .url | default "#" }}">{{ .title }}</a></h2>
+      <h2><a href="{{ .url | default "#" }}">{{ .title }}</a>{{ with .status }} <span class="badge">{{ . }}</span>{{ end }}</h2>
       {{ with .meta }}<p class="item-meta">{{ . }}</p>{{ end }}
       {{ with .description }}<p>{{ . }}</p>{{ end }}
       {{ with .results }}<p>{{ . }}</p>{{ end }}
@@ -54,7 +54,7 @@
       {{ if or (strings.HasSuffix .src ".mp4") (strings.HasSuffix .src ".webm") }}
       <video class="{{ if .zoom }}zoomable{{ end }}" src="{{ .src | relURL }}"{{ with .poster }} poster="{{ . | relURL }}"{{ end }} autoplay loop muted playsinline preload="metadata" aria-label="{{ $title }}"></video>
       {{ else }}
-      <img class="{{ if .zoom }}zoomable{{ end }}" src="{{ .src | relURL }}" alt="{{ $title }}" loading="lazy">
+      <img class="{{ if .zoom }}zoomable{{ end }}" src="{{ .src | relURL }}" alt="{{ .alt | default $title }}" loading="lazy">
       {{ end }}
       {{ end }}
     </div>

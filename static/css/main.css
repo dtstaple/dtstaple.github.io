@@ -154,6 +154,7 @@ h3 { font-size: 1.125rem; }
 .item-card h2 { margin-bottom: 0; }
 .item-card h2 a { color: var(--text); text-decoration: none; }
 .item-card h2 a:hover { color: var(--link-hover); }
+.badge { display: inline-block; vertical-align: middle; margin-left: calc(var(--grid) * .5); padding: .1rem .45rem; border: 1px solid var(--border); border-radius: calc(var(--button-radius) * 0.7); color: var(--muted); font-family: var(--font-mono); font-size: .7rem; font-weight: normal; letter-spacing: .04em; }
 .item-meta { color: var(--muted); font-family: var(--font-mono); font-size: .82rem; margin: calc(var(--grid) * .5) 0 var(--grid); }
 .item-card p { margin-bottom: var(--grid); }
 /* Featured project cards: text left, media right */
